@@ -1,0 +1,10 @@
+:root {
+  --cor-primaria: #3e2723;
+  --cor-secundaria: #795548;
+  --cor-destaque: #d7a86e;
+  --cor-fundo: #fdfaf6;
+  --cor-texto: #2e2e2e;
+
+  --sombra-suave: 0 8px 20px rgba(0,0,0,0.05);
+  --radius: 14px;
+}
