@@ -81,3 +81,22 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
+.conteudo{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.texto{
+  flex: 1;
+}
+
+.imagem{
+  flex: 1;
+}
+
+.imagem img{
+  width: 100%;
+  border-radius: 10px;
+}
