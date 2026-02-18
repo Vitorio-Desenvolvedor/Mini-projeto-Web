@@ -1,3 +1,11 @@
+/*paleta de cores*/
+:root{
+--cor-primaria: #4b2e2e;
+--cor-destaque: #ffcc70;
+--cor-secundaria: #6f4e37;
+}
+
+/* seletor universal*/
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +21,7 @@ body {
 
 /* HEADER/CABEÇALHO */
 header {
-  background-color: #4b2e2e;
+  background-color: var(--cor-primaria);
   color: white;
   padding: 20px;
   text-align: center;
@@ -35,11 +43,14 @@ nav a {
 }
 
 nav a:hover {
+  transition:0.3s ease;
   color: white;
 }
 
 /* MAIN */
 main {
+  max-width: 900px;
+  margin: 0 auto; 
   padding: 30px;
 }
 
