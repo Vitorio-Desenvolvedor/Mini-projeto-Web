@@ -14,80 +14,131 @@
     <header>
         <h1>☕ Top Cafés do Mundo</h1>
         <nav>
-            <a href="index.html"></a>
-            <a href="risco.html"></a>
-            <a href="estatisticas.html"></a>
-            <a href="curiosidade.html"></a>
+            <a href="index.html">Inicio</a>
+            <a href="risco.html">Riscos</a>
+            <a href="estatisticas.html">Estatística</a>
+            <a href="curiosidade.html">Curiosidade</a>
         </nav>
     </header>
 
     <section class="container">
+
         <h2 class="titulo-secao">
             🏆 Top 5 Melhores Cafés
         </h2>
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-topo">
+                <img src="assets/imagens/Café Geisha.jpeg" alt="Café Geisha">
 
-        <div class="card">
-            <img src="assets/imagens/Café Geisha.jpeg" alt="Café Geisha">
-            <div>
-                <h3>1️⃣ Café Geisha</h3>
-                <p>
-                    Extremamente aromático, sabor floral e considerado um dos mais caros do mundo.
-                </p>
+                <div>
+                    <h3>
+                        1️⃣ Café Geisha
+                    </h3>
+                    <p>
+                        Extremamente aromático e um dos mais caros do mundo.
+                    </p>
+                </div>
+                <div class="detalhes">
+                    <p><strong>Origem:</strong>panamá</p>
+                    <p><strong>Região:</strong>Boquete</p>
+                    <p><strong>Altitude:</strong>1.400–1.700m</p>
+                    <p><strong>notas:</strong>Floral, jasmim, frutas tropicais</p>
+                    <p><strong>Tipos</strong>Arábica Especial</p>
+                </div>
             </div>
         </div>
 
-        <div class="card">
-            <img src="assets/imagens/Blue Mountain.jpeg" alt="Blue Mountain">
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-topo">
+                <img src="assets/imagens/Blue Mountain.jpeg" alt="Blue Mountain">
+
+                <div>
+                    <h3>2️⃣ Jamaica Blue Mountain</h3>
+                    <p>
+                        Sabor suave, pouco amargo e equilibrado.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="detalhes">
+                <p><strong>Origem:</strong> Jamaica</p>
+                <p><strong>Religião:</strong> Blue Mountains</p>
+                <p><strong>Altitude:</strong> 900-1.700m</p>
+                <p><strong>Notas:</strong> Chocolate, doce, suave</p>
+                <p><strong>Tipos:</strong> Arábica</p>
+            </div>          
+        </div>
+
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-topo">
+                <img src="assets/imagens/Café Etíope Yirgacheffe.jpeg" alt="Café Yirgacheffe">
+            </div>
+
             <div>
-                <h3>2️⃣ Jamaica Blue Mountain</h3>
-                <p>
-                    Sabor suave, pouco amargo e muito equilibrado.
+                <h3>3️⃣ Café Etíope Yirgacheffe</h3>
+                <p>Notas cítricas e florais muito marcantes.
                 </p>
+            </div>
+
+            <div class="datalhes">
+                <p><strong>Origem:</strong> Etiópia</p>
+                <p><strong>Região:</strong> Yirgacheffe</p>
+                <p><strong>Altitude:</strong> Yirgacheffe</p>
+                <p><strong>Notas</strong> Limão, floral chá</p>
+                <p><strong>Tipo:</strong> Arábica</p>
             </div>
         </div>
 
-        <div class="card">
-            <img src="assets/imagens/Café Etíope Yirgacheffe.jpeg" alt="3Café Etíope">
-            <div>
-                <h3>
-                    3️⃣ Café Etíope Yirgacheffe
-                </h3>
-                <p>
-                    Notas cítricas e florais, considerado um dos mais aromáticos.
-                </p>
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-topo">
+                <img src="assets/imagens/Kopi Luwak.jpeg" alt="Kopi Luwak">
+                <div>
+                    <h3>
+                        4️⃣ Kopi Luwak
+                    </h3>
+                    <p>
+                        Produção exótica e sabor intenso.
+                    </p>
+                </div>
+            </div>
+            <div class="detalhes">
+                <p><strong>Origem:</strong> Indonésia</p>
+                <p><strong>Processo:</strong>    Digestão natural pelo civeta</p>
+               <p><strong>Notas:</strong> Terroso, suave, pouco ácido</p>
+               <p><strong>Tipo:</strong> Arábica</p>
             </div>
         </div>
 
-        <div class="card">
-            <img src="assets/imagens/Kopi Luwak.jpeg" alt="Kopi Luwak">
-            <div>
-                <h3>
-                    4️⃣ Kopi Luwak
-                </h3>
-                <p>
-                    Famoso pelo método exótico de produção, sabor intenso e raro.
-                </p>
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-topo">
+                <img src="assets/imagens/Café Colombiano Supremo.jpeg" alt="Café colombia">
+                <div>
+                    <h3>
+                        5️⃣ Café Colombiano Supremo
+                    </h3>
+                    <p>
+                        Equilíbrio entre acidez e doçura natural.
+                    </p>
+                </div>
+            </div>
+            <div class="detalhes">
+                <p><strong>Origem:</strong> Colômbia</p>
+                <p><strong>Região:</strong> Antioquia</p>
+               <p><strong>Altitude:</strong> 1.200-2.00m</p>
+               <p><strong>Notas:</strong> Caramelo, frutas vermelhas</p>
+               <p><strong>Tipo:</strong> Arábica</p>
             </div>
         </div>
-
-        <div class="card">
-            <img src="assets/imagens/Café Colombiano Supremo.jpeg" alt="Café Colombiano">
-            <div>
-                <h3>
-                    5️⃣ Café Colombiano Supremo
-                </h3>
-                <p>
-                    Equilíbrio perfeito entre acidez e doçura natural.
-                </p>
-            </div>
-        </div>
-
+      
         <!--Segunda parte da classficação-->
 
         <h2 class="titulo-seca vermelho">⚠️ Top 5 Piores Cafés (Segundo críticas)</h2>
-
-        <div class="card ruim">
+          
+        <!-- primeiro card-->
+        <div class="card ruim" onclick="toggleCard (this)">
+            <div class="card-topo">
             <img src="assets/imagens/Café Industrial Muito Torrado.jpeg" alt="Café Industrial">
+            </div>
             <div>
                 <h3>
                     1️⃣ Café Industrial Muito Torrado
@@ -96,10 +147,17 @@
                     Excesso de torra pode causar sabor amargo e queimado.
                 </p>
             </div>
+            <div class="detalhes">
+                 <p><strong>Problema:</strong> Excesso de torra</p>
+                 <p><strong>Consequência:</strong> Gosto queimado</p>
+                 <p><strong>Qualidade:</strong> Baixa</p>
+            </div>
         </div>    
-
-        <div class="card ruim">
+        <!--Segundo card-->
+        <div class="card ruim" onclick="toggleCard(this)">
+            <div class="card-topo">
             <img src="assets/imagens/Café Instantâneo de baixa qualidade.jpeg" alt="Café Instantâneo">
+            </div>
             <div>
                 <h3>
                     2️⃣ Café Instantâneo de baixa qualidade
@@ -108,10 +166,17 @@
                     Pouco aroma e sabor atificial.
                 </p>
             </div>
+            <div class="detalhes">
+                <p><strong>Processo:</strong> Industrializado</p>
+                <p><strong>Problema:</strong> Perda de compostos aromáticos</p>
+                <p><strong>Experiência:</strong> Fraca</p>
+            </div>
         </div>
-
-        <div class="card ruim">
+       <!--terceiro card-->
+        <div class="card ruim" onclick="toggleCard(this)">
+            <div class="card-topo">
             <img src="assets/imagens/Café Mal Armazenado.jpeg" alt="Café velho">
+            </div>
             <div>
                 <h3>
                     3️⃣ Café Mal Armazenado
@@ -120,10 +185,18 @@
                     Perde aroma e pode desenvolver gosto desagradável.
                 </p>
             </div>
+            <div class="detalhes">
+                <p><strong>Problema:</strong>  Oxidação</p>
+                <p><strong>Consequência:</strong> Gosto velho</p>
+                <p><strong>Armazenamento:</strong> Inadequado</p>
+            </div>
         </div>
-
-        <div class="card ruim">
+        
+        <!--Quarto card-->
+        <div class="card ruim" onclick="toggleCard(this)">
+            <div class="card-topo">
             <img src="assets/imagens/Café Excessivamente Concentrado.jpeg" alt="Café muito forte">
+            </div>
             <div>
                 <h3>
                     4️⃣ Café Extra forte Concentrado
@@ -132,11 +205,17 @@
                     Pode causar desconforto e sabor muito intenso.
                 </p>
             </div>
-
+            <div class="detalhes">
+                <p><strong>Problema:</strong> Oxidação</p>
+               <p><strong>Consequência:</strong> Gosto velho</p>
+               <p><strong>Armazenamento:</strong> Inadequado</p>
+            </div>
         </div>
 
-        <div class="card ruim">
+        <div class="card ruim" onclick="toggleCard(this)">
+            <div class="card-topo">
             <img src="assets/imagens/Café com Excesso de Açúcar.jpeg" alt="Café com  muito Açúcar">
+            </div>
             <div>
                 <h3>
                     5️⃣ Café com Excesso de Açúcar
@@ -144,6 +223,11 @@
                 <p>
                     Perde o sabor original e torna-se prejudicial à saúde.
                 </p>
+            </div>
+            <div class="detalhes">
+                <p><strong>Problema:</strong> Alto índice glicêmico</p>
+                <p><strong>Risco:</strong> Diabetes e obesidade</p>
+                <p><strong>Recomendação:</strong> Consumir com moderação</p>
             </div>
         </div>
 
@@ -154,6 +238,22 @@
         © 2026 Mundo do Café
     </p>
 </footer>    
+
+<script>
+function toggleCard(cardSelecionado) {
+    const todosCards = document.querySelectorAll(".card");
+
+    todosCards.forEach(card => {
+        if (card !== cardSelecionado) {
+            card.classList.remove("ativo");
+        }
+    });
+
+    cardSelecionado.classList.toggle("ativo");
+}
+</script>
+
     
 </body>
+
 </html>
