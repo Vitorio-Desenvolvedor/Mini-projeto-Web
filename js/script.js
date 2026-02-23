@@ -1,19 +1,28 @@
 const contadores = document.querySelectorAll(".contador");
 
 contadores.forEach(contador => {
-  const atualizarContador = () => {
-    const alvo = +contador.dataset.target;
-    const valorAtual = +contador.innerText;
 
-    const incremento = alvo / 100;
+    const alvo = parseFloat(contador.dataset.target);
+    const sufixo = contador.dataset.suffix || "";
+    const casasDecimais = parseInt(contador.dataset.decimals) || 0;
 
-    if (valorAtual < alvo) {
-      contador.innerText = Math.ceil(valorAtual + incremento);
-      setTimeout(atualizarContador, 20);
-    } else {
-      contador.innerText = alvo;
-    }
-  };
+    let valorAtual = 0;
+
+    const atualizarContador = () => {
+      const incremento = alvo /120;
+      valorAtual += incremento;
+      
+      if(valorAtual < alvo){
+        
+        contador.innerText =
+         valorAtual.toFixed(casasDecimais) + sufixo;
+
+         requestAnimationFrame(atualizarContador);
+      } else{
+
+        contador.innerText(casasDecimais) + sufixo;
+      }
+   };    
 
   atualizarContador();
 });
