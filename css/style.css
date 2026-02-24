@@ -211,14 +211,91 @@ footer {
   color: #4b2e2e;
 }
 
-/* card ruim */
-.card.ruim{
-  border-left: 6px solid #8b0000;
-  background: #fffafa;
+/* riscos do café */
+.intro-risco{
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 16px;
+  color: var(--cor-secundaria);
 }
 
-.card.ruim:hover{
-  box-shadow: 0 15px 35px rgba(139,0,0,0.25);
+.grid-riscos{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.risco-card{
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.risco-card ::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  background: linear-gradient(to bottom, #6f4e37, #8b0000);
+  border-radius: 20px 0 0 20px;
+}
+
+.risco-card :hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/*topo do card*/
+.risco-topo{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icone{
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #6f4e37, #4b2e2e);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.risco-card h3{
+  margin: 0;
+  margin-bottom: 18px;
+  color: var(--cor-secundaria);
+}
+
+.risco-card p{
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.alerta{
+  background: linear-gradient(135deg, #efe7df, #e5d9ce);
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.alerta h3{
+  margin-bottom: 10px;
+  color: var(--cor-secundaria);
 }
 
 /* estatístcas */
@@ -247,6 +324,10 @@ footer {
   font-size: 26px;
   color: var(--cor-secundaria);
   margin-bottom: 10px;
+}
+
+.estat-card p{
+  color: var(--cor-secundaria);
 }
 
 .contador{
