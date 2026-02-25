@@ -407,6 +407,72 @@ footer {
   transform: scale(1.02);
 }
 
+/*Curiosidades*/
+.curiosidades{
+  padding: 60px 40px;
+  background: #f8f5f2;
+}
+
+.curiosidades h2{
+  text-align: center;
+  font-size: 32px;
+  color: var(--cor-secundaria);
+  margin-bottom: 50px;
+}
+
+.grid-curiosidades{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.curiosidade-card{
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.curiosidade-card :hover{
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.numero{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgba(111, 78, 55, 0.08);
+}
+
+.curiosidade-card h3{
+  margin-bottom: 15px;
+  color: var(--cor-secundaria);
+}
+
+.curiosidade-card p{
+  color: var(--cor-texto-suave);
+  line-height: 1.6;
+}
+
+.voce-sabia{
+  margin-top: 60px;
+  background: linear-gradient(135deg, #6f4e37, #4b2e2e);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.voce-sabia h3{
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
 /* responsividade */
 @media (max-width: 768px) {
 
