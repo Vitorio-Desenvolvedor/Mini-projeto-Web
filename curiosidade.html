@@ -102,15 +102,53 @@
             </p>
         </div>
 
+        <div class="curiosidade-random">
+
+            <h3>🎲 Descubra uma curiosidade aleatória</h3>
+
+            <p id="curiosidadeTexto">
+                Clique no botão para descobrir algo interessante sobre o café.
+            </p>
+
+            <button onclick="mostrarCuriosidade()">
+                Mostrar curiosidade
+            </button>
+
+        </div>
+
   </section>
     
 </main>    
+
 
 <footer>
     <p>
        © 2026 Mundo do Café
     </p>
 </footer>
+
+<script>
+    const curiosidades = [
+        "☕ O café foi descoberto na Etiópia por volta do século IX.",
+        "🌍 O Brasil é o maior produtor de café do mundo.",
+        "👃 O café possui mais de 800 compostos aromáticos.",
+        "🚀 Astronautas já tomaram café no espaço!",
+        "⚡ A cafeína começa a agir no corpo em cerca de 10 minutos.",
+        "📜 No século XVII o café foi proibido em algumas regiões da Europa."
+    ];
+
+    function mostrarCuriosidade() {
+        const texto = document.getElementById("curiosidadeTexto");
+
+        texto.style.opacity = 0;
+
+        setTimeout(() => {
+            const aleatoria = Math.floor(Math.random() * curiosidades.length);
+            texto.textContent = curiosidades[aleatoria];
+            texto.style.opacity = 1;
+        }, 300);
+    }
+</script>
 
 </body>
 </html>

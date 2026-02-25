@@ -433,6 +433,7 @@ footer {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   position: relative;
   transition: 0.3s ease;
+  border-left: 6px solid var(--cor-destaque);
 }
 
 .curiosidade-card :hover{
@@ -471,6 +472,44 @@ footer {
 .voce-sabia h3{
   margin-bottom: 15px;
   font-size: 22px;
+}
+
+/*curiosidade RANDOM*/
+.curiosidade-random{
+  margin-top: 60px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.curiosidade-random h3{
+  margin-bottom: 20px;
+  color: var(--cor-primaria);
+}
+
+#curiosidadeTexto{
+ font-size: 16px;
+  margin-bottom: 25px;
+  color: #555;
+  transition: opacity 0.3s ease;
+}
+
+.curiosidade-random button {
+  background: linear-gradient(135deg, #6f4e37, #4b2e2e);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.curiosidade-random button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 /* responsividade */
