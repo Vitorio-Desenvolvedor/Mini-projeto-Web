@@ -30,6 +30,52 @@
 
 <main>
 
+<section class="hero">
+
+    <video autoplay muted loop playsinline class="video-bg">
+        <source src="assets/video/video-café.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="slides">
+
+        <div class="slide active">
+            <h1>☕ O Mundo do Café</h1>
+            <p>Descubra curiosidades fascinantes.</p>
+            <a href="curiosidade.html" class="btn-hero">Explorar Curiosidades</a>
+        </div>
+
+        <div class="slide">
+            <h1>⚡ Benefícios e Energia</h1>
+            <p>Entenda como a cafeína age no seu corpo.</p>
+            <a href="melhores.html" class="btn-hero">Ver os melhores cafés</a>
+        </div>
+
+        <div class="slide">
+            <h1>⚠ Consumo e Riscos</h1>
+            <p>Saiba os limites seguros do café.</p>
+            <a href="risco.html" class="btn-hero">Ver Riscos</a>
+        </div>
+
+        <div class="slide">
+            <h1>📊 Estatísticas Mundiais</h1>
+            <p>O impacto global do café.</p>
+            <a href="estatisticas.html" class="btn-hero">Ver Dados</a>
+        </div>
+
+    </div>
+
+    <div class="indicadores">
+        <span class="dot active" onclick="irParaSlide(0)"></span>
+        <span class="dot" onclick="irParaSlide(1)"></span>
+        <span class="dot" onclick="irParaSlide(2)"></span>
+        <span class="dot" onclick="irParaSlide(3)"></span>
+    </div>
+
+</section>
+
 <section id="historia" class="bloco">
   <div class="conteudo">
 
@@ -137,6 +183,37 @@
 <footer>
   <p>© 2026 Mundo do Café</p>
 </footer>
+
+<script>
+    let slideAtual = 0;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+
+    function mostrarSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            dots[i].classList.remove("active");
+        });
+
+        slides[index].classList.add("active");
+        dots[index].classList.add("active");
+        slideAtual = index;
+    }
+
+    function irParaSlide(index) {
+        mostrarSlide(index);
+    }
+
+    function proximoSlide() {
+        slideAtual++;
+        if (slideAtual >= slides.length) {
+            slideAtual = 0;
+        }
+        mostrarSlide(slideAtual);
+    }
+
+    setInterval(proximoSlide, 5000);
+</script>
 
 </body>
 </html>
